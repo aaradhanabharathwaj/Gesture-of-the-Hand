@@ -1,0 +1,24 @@
+body{
+    background-color: crimson;
+    color: white;
+    font-family: 'Patrick Hand', cursive;
+}
+#click{
+    color: crimson;
+    background-color: white;
+    font-size: 20px; 
+    width: 150px;    
+    border-radius: 30px;  
+}
+#camera{
+    border: 2px dashed white;
+    width: 350px;
+    height: 300px;    
+}
+#snapshot{
+    color: crimson;
+    background-color: white;
+    font-size: 20px;
+    width: 200px;    
+    border-radius: 30px;
+}

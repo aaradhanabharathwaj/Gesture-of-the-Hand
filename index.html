@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Project 106</title>    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script> 
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">  
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">    
+    </head>
+    <body>
+        <div class="container">
+        <center>
+            <h1>Hand Gesturing App
+                <br>
+  <span>&#128073;</span> 
+  <span>&#128077;</span> 
+  <span>&#128400;</span> 
+  <span>&#128072;</span>    
+            </h1>    
+            <h2>Show a Hand Gesture to know what it means...</h2>      
+            <h3>The Model is trained to identify the following Gestures...</h3>  
+            <h3> 👍 | 👌 | ✌ </h3>
+            <br><br>            
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <h4>Webcam:</h4>
+                <div id="camera"></div>
+                <br><br>
+          <button id="click" onclick="capture_image()">Click Image</button>
+          </div>
+          <div class="col-md-4 col-sm-12 col-xs-12">
+            <h3>Prediction - 1</h3>
+            <p class="gesture_name" id="result_name_1"></p>
+            <p class="hand" id="update_hand_1"></p>
+            <h3>Prediction - 2</h3>
+            <p class="gesture_name" id="result_name_2"></p>
+            <p class="hand" id="update_hand_2"></p>
+          </div>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <h4>Snapshot:</h4>
+          <div id="snap"></div>
+                  <br><br>
+          <button id="snapshot" onclick="predict()">Identify Hand Gesture</button>
+                </div>
+        </center>
+        <script src="main.js"></script>
+    </body>    
+</html>
